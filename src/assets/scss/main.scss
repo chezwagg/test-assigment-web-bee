@@ -1,0 +1,333 @@
+@import "abstracts/variables";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #505050;
+}
+
+
+
+header{
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+        height: 4rem;
+        .top-left-header{
+            display: flex;
+            .top-left-arrow-return{
+                margin-left: 2.3125rem;
+                margin-top: 1.706875rem;
+                margin-bottom: 1.690625rem;
+                height: 10px;
+            }
+            .top-header-left-near-arrow{
+                margin: 0 0 0 0.8125rem;
+                padding-top: 1.34375rem;
+                padding-bottom: 1.34375rem;
+
+                .top-header-left-bold{
+                    font-weight: 500;
+                }
+            }
+        }
+        .top-right-header{
+            display: flex;
+            flex-direction: row;
+            margin: 0.5rem 2rem 0.5rem auto;
+            font-size: 0.875rem;
+            
+            a {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                color: #505050;
+                img{
+                    margin: 0px 16px 8px 16px;
+                }
+            }
+            a:hover{
+                background-color: $button-hover-color;
+            }
+            .invoices{
+                margin: 0;
+            }
+            .statistic{
+                margin: 0 32px 0 0;
+
+            }
+            .schedule{
+                margin: 0 0 0 32px;
+
+            }
+            
+        }
+    }
+    .bottom-header{
+        font-size: 0.875rem;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+        height: 2.5rem;
+        background-color: #FAFAFA;
+        button{
+            display: flex;
+            padding: 0;
+            border: none;
+            background: none;
+            align-items: center;
+            flex-direction: row;
+        }
+        button:hover{
+            background-color: $button-hover-color;
+        }
+        .bottom-header-left{
+            display: flex;
+            margin-left: 2rem;
+            button {
+                img {
+                    margin: 10px 8px 10px 16px;
+                }
+                span{
+                    margin: 12px 16px 12px 0px;
+                }
+            }
+            .activity-button{
+                width: 106px;
+
+            }
+            .map-button{
+                width: 88px;
+
+            }
+            .timer-button{
+                width: 92px;
+
+            }
+        }
+        .bottom-header-right {
+            display: flex;
+            margin-right: 2rem;
+            button{
+                img {
+                    margin: 10px 8px 10px 16px;
+                }
+                span{
+                    margin: 12px 16px 12px 0px;
+                }
+            }
+            .notes-button{
+                width: 98px;
+
+            }
+            .friends-button{
+                width: 107px;
+
+            }
+            .photos-button{
+                width: 105px;
+            }
+            .some-button{
+                width: 68px;
+                .some-thing {
+                    margin: 10px 8px;
+                }
+                .arrow-down{ 
+                    margin: 8px 8px 8px 0px;
+                }
+            }
+        }
+    }
+
+}
+main {
+    background-color: #F1F1F1;
+    .container-fluid{
+        .row{
+            margin: 0;
+        }
+        padding: 32px 0 32px 32px;
+        .accordion{
+            .img-fluid{
+                margin-top: 24px;
+            }
+            .accordion-body{
+                padding: 32px;
+            }
+            .accordion-item-2{
+                margin-top: 32px;
+            }
+            .accordion-item-3{
+                margin-top: 32px;
+            }
+            .quote-name{
+                margin: 16px auto 16px auto;
+            }
+            figure{
+                border-left: 1px solid #D3D8DE;
+                padding-left: 8px;
+                .blockquote{
+                    font-size: 14px;
+                    padding-bottom: 16px;
+                }  
+            }
+            .accordion-button:after{
+                margin-left: 16px;
+            }
+            .accordion-button-minuets{
+                margin-left: auto;
+            }
+            .picture-set-accordion{
+                margin-top: 16px;
+                display: flex;
+                justify-items: center;
+                .eye-icon-accordion{
+                    margin-left: 40.49px;
+                }
+                p{
+                    margin-bottom: 0;
+                    margin-left: 8px;
+                }
+            }
+        }
+        #secondCol{
+            .accordion-body-one{
+                padding: 32px 66px 0 66px;
+                display: flex;  
+                flex-direction: column;
+                text-align:center;
+                align-items: center;
+                justify-content: center;
+            }
+            .user-profile-avatar{
+                border-radius: 50%;
+                width: 132px;
+                height: 132px;
+                clip-path: circle();
+                margin-bottom: 16px;
+            }
+            .user-name-secondnav{
+                width: 121px;
+                h5{
+                    font-weight: 400;
+                    font-size: 18px;
+                    margin: 0;
+                }
+                p{
+                    margin: 8px 0 0 0;
+                    font-size: 14px;
+                    color: #8F8F8F;
+                }
+            }  
+            .useravatar-icons{
+                margin-top: 16px;
+                margin-bottom: 35px;
+                width: 76px;
+            }
+
+            #sub-accord{
+                margin-top: 32px;
+            }
+            #sub-accord{
+                margin-top: 32px;
+            }
+            #accordion-body-2{
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                font-weight: 400;
+                font-size: 15px;
+                .navigation-sub-menu-1{
+                    border-bottom: 1px solid #D3D8DE;
+                }
+                .sub-sub-menu{
+                    height: 24px;
+                    display: flex;
+                    flex-direction: row;
+                    margin: 16px auto 16px 0;
+                    img{
+                        height: 24px;
+                        margin-left: 16px;
+                    }
+                    p{
+                        margin: 4px auto 5px 16px; 
+                    }
+                    span{
+                        justify-self: flex-end;
+                        margin-right: 16px;
+                        img{
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+            #accordion-body-3{
+                font-weight: 400;
+                font-size: 14px;
+                padding: 0;
+                div {
+                    button{
+                        margin: 0 16px 16px 16px;
+                    }
+                    input{
+                        height: 88px;
+                        width: auto;
+                        margin: 8px 16px;
+                    }
+                    .form-control{
+                        font-size: 14px;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    header {
+        .top-header, .bottom-header {
+            display: flex;
+            flex-direction: column;
+        }
+        .top-header{
+            height: 9rem;
+            justify-content: space-around;
+            .top-right-header{
+                margin: 0;
+                justify-content: center;
+            }
+        }
+
+        .bottom-header{
+            height: 5rem;
+            background-color: $bottom-nav-color;
+            .bottom-header-left, .bottom-header-right{
+                margin: 0;
+                justify-content: space-around;
+                height: 2rem;
+            }
+
+        }
+    }
+
+    main {
+        .container-fluid{
+            padding: 0px;
+            .accordion{
+            }
+            
+        }
+    }
+
+}

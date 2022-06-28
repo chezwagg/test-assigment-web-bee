@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/scss/main.scss">
+</head>
+
+<body>
+  <header>
+    <div class="top-header">
+      <div class="top-left-header">
+        <a href="#"><img class="top-left-arrow-return" src="assets/images/arrow.svg" alt="arrow-return"></a>
+        <p class="top-header-left-near-arrow"><span class="top-header-left-bold">User pages</span>-Profile</p>
+      </div>
+      <div class="top-right-header">
+        <a class="statistic" href="#"><img src="assets/images/statistic.svg"
+            alt="arrow-return"><span>Statistic</span></a>
+        <a class="invoices" href="#"><img src="assets/images/invoices.svg" alt="arrow-return"><span>Invoices</span></a>
+        <a class="schedule" href="#"><img src="assets/images/schedule.svg" alt="arrow-return"><span>Schedule</span></a>
+      </div>
+    </div>
+    <div class="bottom-header">
+      <div class="bottom-header-left">
+        <button class="activity-button"><img src="/src/assets/images/hamburger.svg"
+            alt="activity"><span>Activity</span></button>
+        <button class="map-button"><img src="/src/assets/images/map-icon.svg" alt="map"><span>Map</span></button>
+        <button class="timer-button"><img src="/src/assets/images/clocks.svg" alt="map"><span>Time</span></button>
+      </div>
+      <div class="bottom-header-right">
+        <button class="notes-button"><img src="/src/assets/images/notes.svg" alt="activity"><span>Notes</span></button>
+        <button class="friends-button"><img src="/src/assets/images/friends.svg" alt="map"><span>Friends</span></button>
+        <button class="photos-button"><img src="/src/assets/images/photos.svg" alt="map"><span>Photos</span></button>
+        <button class="some-button"><img class="some-thing" src="/src/assets/images/somethingy.svg" alt="map"><img
+            class="arrow-down" src="/src/assets/images/pointingbottomarrow.svg" alt="map"></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-xxl-9 p-0">
+          <div class="accordion" id="main-div"> <! первый ряд на мейн скрине>
+            <div class="accordion-item">
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img class="img-fluid" src="/src/assets/images/snoop-dogg.jpg" alt="hasbik" height="41.8%">
+                  <p class="quote-name">
+                    <img src="/src/assets/images/messga-icon.svg" alt="">
+                    <a href="#" class="text-decoration-none">Jason Anderson</a> commented:
+                  </p>
+                  <figure>
+                    <blockquote class="blockquote">
+                      <p>A well-known quote, contained in a blockquote element.A well-known quote, contained in a blockquote element.A well-known quote, contained in a blockquote element.A well-known quote, contained in a blockquote element.A well-known quote, contained in a blockquote element.A well-known quote, contained in a blockquote element.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                      Banana king, the Friberg, <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                  </figure>
+                  <div class="picture-set-accordion">
+                    <img src="/src/assets/images/eye-icon.svg" alt="">
+                    <p>432</p>
+                    <img src="/src/assets/images/messga-icon.svg" alt="" class="eye-icon-accordion">
+                    <p>47</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item-2">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Sunset Sunset Sunset
+                  <div class="accordion-button-minuets">
+                    <img src="/src/assets/images/real-clocks.svg" alt="real-clocks">
+                    <span>53 minuets ago</span>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>BO-HO</strong>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item-3">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Morning of Siberia
+                  <div class="accordion-button-minuets">
+                    <img src="/src/assets/images/real-clocks.svg" alt="real-clocks">
+                    <span>53 minuets ago</span>
+                  </div>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>BO-HO</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xxl-3 ps-5 pe-5" id="secondCol"> <! второй ряд на мейн скрине>
+          <div class="accordion" id="AccordionSecond">
+            <div class="accordion-item">
+              <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body-one">
+                  <img src="/src/assets/images/jamesbond.jpg" alt="" class="user-profile-avatar">
+                  <div class="user-name-secondnav">
+                    <h5>Alex Golod</h5>
+                    <p>Better UX/UI designer</p>
+                  </div>
+                  <div class="useravatar-icons">
+                    <img src="/src/assets/images/telegram.svg" alt="telega">
+                    <img src="/src/assets/images/hh.svg" alt="hh">
+                    <img src="/src/assets/images/twitter.svg" alt="twi">
+                  </div>
+              </div>
+            </div>
+            </div>
+            <div class="accordion-item" id="sub-accord">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                  Navigation
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body" id="accordion-body-2">
+                  <div class="navigation-sub-menu-1">
+                    <div class="sub-sub-menu">
+                      <img src="/src/assets/images/profile-icon.svg" alt="profile">
+                      <p>My profile</p>
+                    </div>
+                    <div class="sub-sub-menu">
+                      <img src="/src/assets/images/balance-icon.svg" alt="balance">
+                      <p>Balance</p>
+                      <span>$ 1,430</span>
+                    </div>
+                    <div class="sub-sub-menu">
+                      <img src="/src/assets/images/connections-icon.svg" alt="con">
+                      <p>Connections</p>
+                      <span><img src="/src/assets/images/number-45.svg" alt="sssd"></span>
+                    </div>
+                    <div class="sub-sub-menu">
+                      <img src="/src/assets/images/friends.svg" alt="fre">
+                      <p>Friends</p>
+                    </div>
+                  </div>
+                  <div class="navigation-sub-menu-2">
+                    <div class="sub-sub-menu">
+                      <img src="/src/assets/images/events-icon.svg" alt="eveveve">
+                      <p>Events</p>
+                      <span><img src="/src/assets/images/number-29.svg" alt="num2"></span>
+                    </div>
+                    <div class="sub-sub-menu">
+                      <img src="/src/assets/images/somethingy.svg" alt="ssss">
+                      <p>Account settings</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" id="sub-accord">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                  Share your thought
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body" id="accordion-body-3">
+                  <div class="d-grid">
+                    <input class="form-control form-control-lg" type="text" placeholder="Enter your message" aria-label=".form-control-lg example">
+                    <button class="btn btn-primary" type="button">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+<script type="module" src="assets/js/main.js"></script>
+
+</html>
