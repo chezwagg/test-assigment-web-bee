@@ -4,14 +4,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+@import "/src/assets/scss/map.scss";
+
+@import "/src/assets/scss/timer.scss";
+
 
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #505050;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 1027px;
 }
 
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
 
+html{
+    scrollbar-width: none;
+}
 
 header{
     .top-header{
@@ -22,6 +35,7 @@ header{
         height: 4rem;
         .top-left-header{
             display: flex;
+            height: auto;
             .top-left-arrow-return{
                 margin-left: 2.3125rem;
                 margin-top: 1.706875rem;
@@ -41,6 +55,7 @@ header{
         .top-right-header{
             display: flex;
             flex-direction: row;
+            height: auto;
             margin: 0.5rem 2rem 0.5rem auto;
             font-size: 0.875rem;
             
@@ -77,21 +92,26 @@ header{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
         height: 2.5rem;
         background-color: #FAFAFA;
-        button{
+        a{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
             display: flex;
             padding: 0;
             border: none;
             background: none;
             align-items: center;
             flex-direction: row;
+            color:black;
         }
-        button:hover{
+        a:hover{
             background-color: $button-hover-color;
         }
         .bottom-header-left{
             display: flex;
             margin-left: 2rem;
-            button {
+            height: auto;
+            a {
                 img {
                     margin: 10px 8px 10px 16px;
                 }
@@ -101,26 +121,35 @@ header{
             }
             .activity-button{
                 width: 106px;
+                height: 40px;
 
             }
             .map-button{
                 width: 88px;
+                height: 40px;
 
             }
             .timer-button{
                 width: 92px;
+                height: 40px;
 
             }
         }
         .bottom-header-right {
             display: flex;
             margin-right: 2rem;
-            button{
+            height: auto;
+            justify-content: flex-end;
+            a{
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
                 img {
                     margin: 10px 8px 10px 16px;
                 }
                 span{
                     margin: 12px 16px 12px 0px;
+                    color: black;
                 }
             }
             .notes-button{
@@ -148,18 +177,24 @@ header{
 
 }
 main {
+    height: 1027px;
     background-color: #F1F1F1;
     .container-fluid{
+        padding: 0;
         .row{
             margin: 0;
         }
-        padding: 32px 0 32px 32px;
+        #firstCol{
+            width: 1080px;
+        }
         .accordion{
+
             .img-fluid{
                 margin-top: 24px;
             }
             .accordion-body{
                 padding: 32px;
+                height: 672px;
             }
             .accordion-item-2{
                 margin-top: 32px;
@@ -171,7 +206,7 @@ main {
                 margin: 16px auto 16px auto;
             }
             figure{
-                border-left: 1px solid #D3D8DE;
+                border-left: 2px solid #D3D8DE;
                 padding-left: 8px;
                 .blockquote{
                     font-size: 14px;
@@ -198,7 +233,16 @@ main {
             }
         }
         #secondCol{
-            .accordion-body-one{
+            width: 264px;
+            padding: 0;
+            margin-left: 32px;
+            .accordion-button{
+                height: 38px;
+            }
+            .accordion-button:after{
+                margin-left: auto;
+            }
+            .accordion-body-1{
                 padding: 32px 66px 0 66px;
                 display: flex;  
                 flex-direction: column;
@@ -235,8 +279,9 @@ main {
             #sub-accord{
                 margin-top: 32px;
             }
-            #sub-accord{
-                margin-top: 32px;
+            #accordion-body-1{
+                height: 296px;
+                width: 264px;
             }
             #accordion-body-2{
                 padding: 0;
@@ -244,6 +289,7 @@ main {
                 flex-direction: column;
                 font-weight: 400;
                 font-size: 15px;
+                height: 274px;
                 .navigation-sub-menu-1{
                     border-bottom: 1px solid #D3D8DE;
                 }
@@ -272,6 +318,7 @@ main {
                 font-weight: 400;
                 font-size: 14px;
                 padding: 0;
+                height: 152px;
                 div {
                     button{
                         margin: 0 16px 16px 16px;
@@ -324,10 +371,30 @@ main {
     main {
         .container-fluid{
             padding: 0px;
-            .accordion{
-            }
+
             
         }
     }
 
+}
+
+@media screen and (max-width: 1439px) {
+    body{
+        width: auto;
+        main{
+            height: auto;
+        }
+    }
+    #secondCol{
+        width: auto;
+    }
+    #accordion-body-1{
+        width: auto;
+    }
+    #accordion-body-2{
+        width: auto;
+    }
+    #accordion-body-3{
+       width: auto;
+    }
 }

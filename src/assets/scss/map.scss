@@ -1,0 +1,64 @@
+//map size's
+#map {
+    max-width: 1312px;
+    height: 480px;
+}
+main{
+    padding: 32px;
+    height:100vh;
+}
+.map-main{
+    padding: 18px 32px 32px 32px;
+    background-color: $white;
+    .top-interface{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p{
+            margin: 0 auto 19px 0;
+        }
+        .trio{
+            margin: 0 0 16px auto;
+            img{
+                margin: 0 0 0 8px;
+            }
+
+        }
+    }
+}
+.map-with-preload{
+    width: auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    .preloader-background{
+        position: fixed;
+        z-index: 101;
+        max-width: 1312px;
+        height: 480px;
+        background-color:$white;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 143.47px;
+            height: 124.83px;
+            -webkit-animation:spin 2s linear infinite;
+            -moz-animation:spin 2s linear infinite;
+            animation:spin 2s linear infinite;
+            align-self: center;
+        }
+    }
+}
+@media screen and (max-width: 1439px) {
+    body{
+        width: auto;
+        main{
+            height: auto;
+        }
+    }
+}
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

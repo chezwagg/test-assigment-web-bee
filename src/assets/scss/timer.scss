@@ -1,0 +1,38 @@
+main{
+    padding: 32px;
+    height:100vh;
+}
+.main-timer{
+    height: 123px;
+    padding: 18px 32px 32px 32px;
+    background-color: $white;
+    .top-interface{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p{
+            margin: 0 auto 19px 0;
+        }
+        .trio{
+            margin: 0 0 16px auto;
+            img{
+                margin: 0 0 0 8px;
+            }
+
+        }
+    }
+}
+.timer{
+    width: auto;
+    text-align: left;
+    margin: 0;
+}
+
+@media screen and (max-width: 1439px) {
+    body{
+        width: auto;
+        main{
+            height: auto;
+        }
+    }
+}
