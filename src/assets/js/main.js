@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-import * as bootstrap from 'bootstrap';
-=======
 import * as bootstrap from "bootstrap";
 
 let start = Date.now();
@@ -24,4 +21,3 @@ setInterval(() => {
 
   console.log(`seconds elapsed = ${Math.floor(millis / 1000)}`);
 }, 1000);
->>>>>>> Stashed changes
