@@ -1,47 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/scss/main.scss" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/scss/main.scss">
-</head>
-
-<body>
-  <header>
-    <div class="top-header">
-      <div class="top-left-header">
-        <a href="https://google.com/" onclick="route()"><img class="top-left-arrow-return" src="assets/images/arrow.svg" alt="arrow-return"></a>
-        <p class="top-header-left-near-arrow"><span class="top-header-left-bold">User pages</span>-Profile</p>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="top-left-header">
+          <a href="https://google.com/" onclick="route()"
+            ><img
+              class="top-left-arrow-return"
+              src="assets/images/arrow.svg"
+              alt="arrow-return"
+          /></a>
+          <p class="top-header-left-near-arrow">
+            <span class="top-header-left-bold">User pages</span>-Profile
+          </p>
+        </div>
+        <div class="top-right-header">
+          <a class="statistic" href="#"
+            ><img src="assets/images/statistic.svg" alt="arrow-return" /><span
+              >Statistic</span
+            ></a
+          >
+          <a class="invoices" href="#"
+            ><img src="assets/images/invoices.svg" alt="arrow-return" /><span
+              >Invoices</span
+            ></a
+          >
+          <a class="schedule" href="#"
+            ><img src="assets/images/schedule.svg" alt="arrow-return" /><span
+              >Schedule</span
+            ></a
+          >
+        </div>
       </div>
-      <div class="top-right-header">
-        <a class="statistic" href="#"><img src="assets/images/statistic.svg"
-            alt="arrow-return"><span>Statistic</span></a>
-        <a class="invoices" href="#"><img src="assets/images/invoices.svg" alt="arrow-return"><span>Invoices</span></a>
-        <a class="schedule" href="#"><img src="assets/images/schedule.svg" alt="arrow-return"><span>Schedule</span></a>
+      <div class="bottom-header">
+        <div class="bottom-header-left">
+          <a href="/profile" onclick="route()" class="activity-button"
+            ><img
+              src="/src/assets/images/hamburger.svg"
+              alt="activity"
+            />Activity</a
+          >
+          <a href="/map" onclick="route(event)" class="map-button"
+            ><img src="/src/assets/images/map-icon.svg" alt="map" />Map</a
+          >
+          <a href="/timer" onclick="route(event)" class="timer-button"
+            ><img src="/src/assets/images/clocks.svg" alt="map" />Time</a
+          >
+        </div>
+        <div class="bottom-header-right">
+          <a class="notes-button"
+            ><img src="/src/assets/images/notes.svg" alt="activity" /><span
+              >Notes</span
+            ></a
+          >
+          <a class="friends-button"
+            ><img src="/src/assets/images/friends.svg" alt="map" /><span
+              >Friends</span
+            ></a
+          >
+          <a class="photos-button"
+            ><img src="/src/assets/images/photos.svg" alt="map" /><span
+              >Photos</span
+            ></a
+          >
+          <a class="some-button"
+            ><img
+              class="some-thing"
+              src="/src/assets/images/somethingy.svg"
+              alt="map" /><img
+              class="arrow-down"
+              src="/src/assets/images/pointingbottomarrow.svg"
+              alt="map"
+          /></a>
+        </div>
       </div>
-    </div>
-    <div class="bottom-header">
-      <div class="bottom-header-left">
-        <a href="/profile" onclick="route()" class="activity-button" ><img src="/src/assets/images/hamburger.svg"alt="activity">Activity</a>
-        <a href="/map" onclick="route()" class="map-button" ><img src="/src/assets/images/map-icon.svg" alt="map">Map</a>
-        <a href="/timer" onclick="route()" class="timer-button"><img src="/src/assets/images/clocks.svg" alt="map">Time</a>
-      </div>
-      <div class="bottom-header-right">
-        <a class="notes-button"><img src="/src/assets/images/notes.svg" alt="activity"><span>Notes</span></a>
-        <a class="friends-button"><img src="/src/assets/images/friends.svg" alt="map"><span>Friends</span></a>
-        <a class="photos-button"><img src="/src/assets/images/photos.svg" alt="map"><span>Photos</span></a>
-        <a class="some-button"><img class="some-thing" src="/src/assets/images/somethingy.svg" alt="map"><img
-            class="arrow-down" src="/src/assets/images/pointingbottomarrow.svg" alt="map"></a>
-      </div>
-    </div>
-  </header>
-  <main id = "main-page"> 
-    
-  </main>
-  <script type="module" src="assets/js/main.js"></script>
-  <script src="/src/assets/js/route.js"></script>
-  
-</body>
+    </header>
+    <main id="main-page"></main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="/src/assets/js/main.js"></script>
+    <script src="/src/assets/js/route.js"></script>
+  </body>
 </html>

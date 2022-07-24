@@ -378,6 +378,10 @@ main {
 
 }
 
+.hidden {
+    display: none;
+}
+
 @media screen and (max-width: 1439px) {
     body{
         width: auto;
