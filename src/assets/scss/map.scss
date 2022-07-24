@@ -1,7 +1,9 @@
 //map size's
 #map {
     max-width: 1312px;
-    height: 480px;
+    height: 480px !important;
+    position: fixed !important;
+    width: 100% !important;
 }
 main{
     padding: 32px;
@@ -39,6 +41,9 @@ main{
         background-color:$white;
         display: flex;
         justify-content: center;
+        &.hidden {
+            display: none;
+        }
         img{
             width: 143.47px;
             height: 124.83px;
@@ -49,6 +54,8 @@ main{
         }
     }
 }
+
+
 @media screen and (max-width: 1439px) {
     body{
         width: auto;
