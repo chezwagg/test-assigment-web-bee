@@ -1,6 +1,3 @@
-// Initialize and add the map
-const preLoader = document.querySelector(".preloader");
-
 function initMap() {
   const khabarovsk = { lat: 48.48, lng: 135.071 };
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -14,6 +11,13 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
 window.onload = function () {
-  preLoader.classList.add("hidden");
+  console.log(1);
+  const preloader = document.querySelector(".preloader");
+  preloader.classList.add("hidden");
 };
+
+$(document).ready(function () {
+  $(".preloader").addClass("hidden");
+});
